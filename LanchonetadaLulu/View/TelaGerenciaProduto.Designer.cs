@@ -29,38 +29,38 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            tabControl1 = new TabControl();
+            tabPageProduto = new TabControl();
             tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            dataGridView1 = new DataGridView();
+            dataGridViewProdutos = new DataGridView();
             Código = new DataGridViewTextBoxColumn();
             Produto = new DataGridViewTextBoxColumn();
             Valor = new DataGridViewTextBoxColumn();
             Tipo = new DataGridViewTextBoxColumn();
             Quantidade = new DataGridViewTextBoxColumn();
-            button2 = new Button();
-            textBox2 = new TextBox();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            label8 = new Label();
-            comboBox1 = new ComboBox();
+            btn_BuscarProduto = new Button();
+            tbx_NomeProduto = new TextBox();
+            label2 = new Label();
+            tabPage2 = new TabPage();
             groupBox1 = new GroupBox();
-            button3 = new Button();
-            button4 = new Button();
-            tabControl1.SuspendLayout();
+            btn_ExcluirProduto = new Button();
+            btn_AlterarProduto = new Button();
+            tbx_CodigoProdutoVer = new TextBox();
+            cbx_TipoProdutoVer = new ComboBox();
+            label4 = new Label();
+            label8 = new Label();
+            label5 = new Label();
+            tbx_qtdProdutoVer = new TextBox();
+            label6 = new Label();
+            tbx_PrecoProdutoVer = new TextBox();
+            label7 = new Label();
+            tbx_ProdutoProdutoVer = new TextBox();
+            btn_BuscarProdutoCodigo = new Button();
+            tbx_CodigoProduto = new TextBox();
+            label3 = new Label();
+            tabPageProduto.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProdutos).BeginInit();
             tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -74,21 +74,21 @@
             label1.TabIndex = 1;
             label1.Text = "Manipulando os Produtos";
             // 
-            // tabControl1
+            // tabPageProduto
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(94, 109);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(571, 292);
-            tabControl1.TabIndex = 2;
+            tabPageProduto.Controls.Add(tabPage1);
+            tabPageProduto.Controls.Add(tabPage2);
+            tabPageProduto.Location = new Point(94, 109);
+            tabPageProduto.Name = "tabPageProduto";
+            tabPageProduto.SelectedIndex = 0;
+            tabPageProduto.Size = new Size(571, 292);
+            tabPageProduto.TabIndex = 2;
             // 
             // tabPage1
             // 
-            tabPage1.Controls.Add(dataGridView1);
-            tabPage1.Controls.Add(button1);
-            tabPage1.Controls.Add(textBox1);
+            tabPage1.Controls.Add(dataGridViewProdutos);
+            tabPage1.Controls.Add(btn_BuscarProduto);
+            tabPage1.Controls.Add(tbx_NomeProduto);
             tabPage1.Controls.Add(label2);
             tabPage1.Location = new Point(4, 24);
             tabPage1.Name = "tabPage1";
@@ -98,53 +98,14 @@
             tabPage1.Text = "Pesquisar";
             tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // dataGridViewProdutos
             // 
-            tabPage2.Controls.Add(groupBox1);
-            tabPage2.Controls.Add(button2);
-            tabPage2.Controls.Add(textBox2);
-            tabPage2.Controls.Add(label3);
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(563, 264);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "Alterar & Excluir";
-            tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(28, 20);
-            label2.Name = "label2";
-            label2.Size = new Size(145, 15);
-            label2.TabIndex = 0;
-            label2.Text = "Digite o nome do Produto";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(28, 47);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(464, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(28, 76);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Buscar";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Código, Produto, Valor, Tipo, Quantidade });
-            dataGridView1.Location = new Point(28, 105);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(516, 131);
-            dataGridView1.TabIndex = 3;
+            dataGridViewProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewProdutos.Columns.AddRange(new DataGridViewColumn[] { Código, Produto, Valor, Tipo, Quantidade });
+            dataGridViewProdutos.Location = new Point(15, 105);
+            dataGridViewProdutos.Name = "dataGridViewProdutos";
+            dataGridViewProdutos.Size = new Size(529, 131);
+            dataGridViewProdutos.TabIndex = 3;
             // 
             // Código
             // 
@@ -171,30 +132,103 @@
             Quantidade.HeaderText = "Quantidade";
             Quantidade.Name = "Quantidade";
             // 
-            // button2
+            // btn_BuscarProduto
             // 
-            button2.Location = new Point(312, 23);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 5;
-            button2.Text = "Buscar";
-            button2.UseVisualStyleBackColor = true;
+            btn_BuscarProduto.Location = new Point(28, 76);
+            btn_BuscarProduto.Name = "btn_BuscarProduto";
+            btn_BuscarProduto.Size = new Size(75, 23);
+            btn_BuscarProduto.TabIndex = 2;
+            btn_BuscarProduto.Text = "Buscar";
+            btn_BuscarProduto.UseVisualStyleBackColor = true;
+            btn_BuscarProduto.Click += btn_BuscarProduto_Click;
             // 
-            // textBox2
+            // tbx_NomeProduto
             // 
-            textBox2.Location = new Point(180, 23);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(114, 23);
-            textBox2.TabIndex = 4;
+            tbx_NomeProduto.Location = new Point(28, 47);
+            tbx_NomeProduto.Name = "tbx_NomeProduto";
+            tbx_NomeProduto.Size = new Size(464, 23);
+            tbx_NomeProduto.TabIndex = 1;
             // 
-            // label3
+            // label2
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(21, 26);
-            label3.Name = "label3";
-            label3.Size = new Size(153, 15);
-            label3.TabIndex = 3;
-            label3.Text = "Digite o Código do Produto";
+            label2.AutoSize = true;
+            label2.Location = new Point(28, 20);
+            label2.Name = "label2";
+            label2.Size = new Size(145, 15);
+            label2.TabIndex = 0;
+            label2.Text = "Digite o nome do Produto";
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(groupBox1);
+            tabPage2.Controls.Add(btn_BuscarProdutoCodigo);
+            tabPage2.Controls.Add(tbx_CodigoProduto);
+            tabPage2.Controls.Add(label3);
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(563, 264);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Alterar & Excluir";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(btn_ExcluirProduto);
+            groupBox1.Controls.Add(btn_AlterarProduto);
+            groupBox1.Controls.Add(tbx_CodigoProdutoVer);
+            groupBox1.Controls.Add(cbx_TipoProdutoVer);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(tbx_qtdProdutoVer);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(tbx_PrecoProdutoVer);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(tbx_ProdutoProdutoVer);
+            groupBox1.Location = new Point(6, 52);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(542, 206);
+            groupBox1.TabIndex = 16;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Resultado da Pesquisa:";
+            // 
+            // btn_ExcluirProduto
+            // 
+            btn_ExcluirProduto.Location = new Point(436, 177);
+            btn_ExcluirProduto.Name = "btn_ExcluirProduto";
+            btn_ExcluirProduto.Size = new Size(75, 23);
+            btn_ExcluirProduto.TabIndex = 17;
+            btn_ExcluirProduto.Text = "Excluir";
+            btn_ExcluirProduto.UseVisualStyleBackColor = true;
+            btn_ExcluirProduto.Click += btn_ExcluirProduto_Click;
+            // 
+            // btn_AlterarProduto
+            // 
+            btn_AlterarProduto.Location = new Point(355, 177);
+            btn_AlterarProduto.Name = "btn_AlterarProduto";
+            btn_AlterarProduto.Size = new Size(75, 23);
+            btn_AlterarProduto.TabIndex = 16;
+            btn_AlterarProduto.Text = "Alterar";
+            btn_AlterarProduto.UseVisualStyleBackColor = true;
+            btn_AlterarProduto.Click += btn_AlterarProduto_Click;
+            // 
+            // tbx_CodigoProdutoVer
+            // 
+            tbx_CodigoProdutoVer.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            tbx_CodigoProdutoVer.Location = new Point(114, 31);
+            tbx_CodigoProdutoVer.Name = "tbx_CodigoProdutoVer";
+            tbx_CodigoProdutoVer.Size = new Size(101, 33);
+            tbx_CodigoProdutoVer.TabIndex = 10;
+            // 
+            // cbx_TipoProdutoVer
+            // 
+            cbx_TipoProdutoVer.FormattingEnabled = true;
+            cbx_TipoProdutoVer.Items.AddRange(new object[] { "Lanche", "Bebida" });
+            cbx_TipoProdutoVer.Location = new Point(370, 75);
+            cbx_TipoProdutoVer.Name = "cbx_TipoProdutoVer";
+            cbx_TipoProdutoVer.Size = new Size(121, 23);
+            cbx_TipoProdutoVer.TabIndex = 15;
             // 
             // label4
             // 
@@ -206,6 +240,16 @@
             label4.TabIndex = 6;
             label4.Text = "Código:";
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            label8.Location = new Point(307, 73);
+            label8.Name = "label8";
+            label8.Size = new Size(57, 25);
+            label8.TabIndex = 14;
+            label8.Text = "Tipo:";
+            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -215,6 +259,14 @@
             label5.Size = new Size(92, 25);
             label5.TabIndex = 7;
             label5.Text = "Produto:";
+            // 
+            // tbx_qtdProdutoVer
+            // 
+            tbx_qtdProdutoVer.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            tbx_qtdProdutoVer.Location = new Point(279, 123);
+            tbx_qtdProdutoVer.Name = "tbx_qtdProdutoVer";
+            tbx_qtdProdutoVer.Size = new Size(78, 33);
+            tbx_qtdProdutoVer.TabIndex = 13;
             // 
             // label6
             // 
@@ -226,6 +278,14 @@
             label6.TabIndex = 8;
             label6.Text = "Preço:";
             // 
+            // tbx_PrecoProdutoVer
+            // 
+            tbx_PrecoProdutoVer.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            tbx_PrecoProdutoVer.Location = new Point(104, 123);
+            tbx_PrecoProdutoVer.Name = "tbx_PrecoProdutoVer";
+            tbx_PrecoProdutoVer.Size = new Size(108, 33);
+            tbx_PrecoProdutoVer.TabIndex = 12;
+            // 
             // label7
             // 
             label7.AutoSize = true;
@@ -236,95 +296,39 @@
             label7.TabIndex = 9;
             label7.Text = "Qtd:";
             // 
-            // textBox3
+            // tbx_ProdutoProdutoVer
             // 
-            textBox3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            textBox3.Location = new Point(104, 31);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(101, 33);
-            textBox3.TabIndex = 10;
+            tbx_ProdutoProdutoVer.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            tbx_ProdutoProdutoVer.Location = new Point(114, 70);
+            tbx_ProdutoProdutoVer.Name = "tbx_ProdutoProdutoVer";
+            tbx_ProdutoProdutoVer.Size = new Size(192, 33);
+            tbx_ProdutoProdutoVer.TabIndex = 11;
             // 
-            // textBox4
+            // btn_BuscarProdutoCodigo
             // 
-            textBox4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            textBox4.Location = new Point(114, 70);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(192, 33);
-            textBox4.TabIndex = 11;
+            btn_BuscarProdutoCodigo.Location = new Point(313, 23);
+            btn_BuscarProdutoCodigo.Name = "btn_BuscarProdutoCodigo";
+            btn_BuscarProdutoCodigo.Size = new Size(75, 23);
+            btn_BuscarProdutoCodigo.TabIndex = 5;
+            btn_BuscarProdutoCodigo.Text = "Buscar";
+            btn_BuscarProdutoCodigo.UseVisualStyleBackColor = true;
+            btn_BuscarProdutoCodigo.Click += btn_BuscarProdutoCodigo_Click;
             // 
-            // textBox5
+            // tbx_CodigoProduto
             // 
-            textBox5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            textBox5.Location = new Point(104, 123);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(108, 33);
-            textBox5.TabIndex = 12;
+            tbx_CodigoProduto.Location = new Point(180, 23);
+            tbx_CodigoProduto.Name = "tbx_CodigoProduto";
+            tbx_CodigoProduto.Size = new Size(114, 23);
+            tbx_CodigoProduto.TabIndex = 4;
             // 
-            // textBox6
+            // label3
             // 
-            textBox6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            textBox6.Location = new Point(279, 123);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(78, 33);
-            textBox6.TabIndex = 13;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            label8.Location = new Point(307, 73);
-            label8.Name = "label8";
-            label8.Size = new Size(57, 25);
-            label8.TabIndex = 14;
-            label8.Text = "Tipo:";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Lanche", "Bebida" });
-            comboBox1.Location = new Point(370, 75);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 15;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(textBox6);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Location = new Point(6, 52);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(542, 206);
-            groupBox1.TabIndex = 16;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Resultado da Pesquisa:";
-            // 
-            // button3
-            // 
-            button3.Location = new Point(355, 177);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 16;
-            button3.Text = "Alterar";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(436, 177);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 17;
-            button4.Text = "Excluir";
-            button4.UseVisualStyleBackColor = true;
+            label3.AutoSize = true;
+            label3.Location = new Point(21, 26);
+            label3.Name = "label3";
+            label3.Size = new Size(153, 15);
+            label3.TabIndex = 3;
+            label3.Text = "Digite o Código do Produto";
             // 
             // TelaGerenciaProduto
             // 
@@ -332,19 +336,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(765, 450);
-            Controls.Add(tabControl1);
+            Controls.Add(tabPageProduto);
             Controls.Add(label1);
             MaximizeBox = false;
             Name = "TelaGerenciaProduto";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sistema de Gerenciamento de Produtos Alimentício - SGPA";
-            tabControl1.ResumeLayout(false);
+            tabPageProduto.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewProdutos).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -354,33 +358,33 @@
         #endregion
 
         private Label label1;
-        private TabControl tabControl1;
+        private TabControl tabPageProduto;
         private TabPage tabPage1;
         private TabPage tabPage2;
-        private DataGridView dataGridView1;
-        private Button button1;
-        private TextBox textBox1;
+        private DataGridView dataGridViewProdutos;
+        private Button btn_BuscarProduto;
+        private TextBox tbx_NomeProduto;
         private Label label2;
         private DataGridViewTextBoxColumn Código;
         private DataGridViewTextBoxColumn Produto;
         private DataGridViewTextBoxColumn Valor;
         private DataGridViewTextBoxColumn Tipo;
         private DataGridViewTextBoxColumn Quantidade;
-        private TextBox textBox3;
+        private TextBox tbx_CodigoProdutoVer;
         private Label label7;
         private Label label6;
         private Label label5;
         private Label label4;
-        private Button button2;
-        private TextBox textBox2;
+        private Button btn_BuscarProdutoCodigo;
+        private TextBox tbx_CodigoProduto;
         private Label label3;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
+        private TextBox tbx_qtdProdutoVer;
+        private TextBox tbx_PrecoProdutoVer;
+        private TextBox tbx_ProdutoProdutoVer;
         private GroupBox groupBox1;
-        private ComboBox comboBox1;
+        private ComboBox cbx_TipoProdutoVer;
         private Label label8;
-        private Button button4;
-        private Button button3;
+        private Button btn_ExcluirProduto;
+        private Button btn_AlterarProduto;
     }
 }

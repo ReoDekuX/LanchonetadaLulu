@@ -73,6 +73,16 @@ namespace LanchonetadaLulu.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap e07ea8e1_4674_45a6_8472_1a83ab6524951 {
+            get {
+                object obj = ResourceManager.GetObject("e07ea8e1-4674-45a6-8472-1a83ab6524951", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
